@@ -1,0 +1,152 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/myGroceries.txt
+budget: 1000
+
+NOTES: Testing target budget > sum of all elements.
+-----------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 14.0, 10.3, 3.0, 7.0, 5.0, 5.5, 4.0]
+
+Enter your budget:
+1000
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 0 ms : 767209 ns
+Purchased grocery prices are:
+[2.5, 14.0, 10.3, 3.0, 7.0, 5.0, 5.5, 4.0]
+Done with ShoppingBag.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/myGroceries.txt
+budget: 9
+
+NOTES: Testing set of elements found with sums
+       to exactly to target budget.
+---------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 14.0, 10.3, 3.0, 7.0, 5.0, 5.5, 4.0]
+
+Enter your budget:
+13.3
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 0 ms : 997134 ns
+Purchased grocery prices are:
+[10.3, 3.0]
+Done with ShoppingBag.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/myGroceries.txt
+budget: 17.2
+
+NOTES: Testing target budget returning closest match.
+---------------------------------------------------
+
+The list of groceries has 8 items.
+Groceries wanted:
+[2.5, 14.0, 10.3, 3.0, 7.0, 5.0, 5.5, 4.0]
+
+Enter your budget:
+17.2
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 779356 ns
+Purchased grocery prices are:
+[14.0, 3.0]
+Done with ShoppingBag.
+
+-----------------------------------------------------
+EXTRA CREDIT
+-----------------------------------------------------
+Test file: resources/music_genre_subset.json
+duration: 100
+
+NOTES: Testing target budget > sum of all elements.
+       I am sorry that the maximun I found is 60 mins.
+-----------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+
+Enter the duration of your play list (in minutes):
+60
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 35 sec : 271 ms : 935175 ns
+Songs in play list:
+[Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Dance The Night Away, 0:2:39, Blue Oyster Cult, classic pop and rock
+, Debbie Denise, 0:4:11, Blue Oyster Cult, classic pop and rock
+, (Don't Fear) The Reaper, 0:5:8, Blue Oyster Cult, classic pop and rock
+, Morning Final, 0:4:15, Blue Oyster Cult, classic pop and rock
+, The Revenge Of Vera Gemini, 0:3:51, Blue Oyster Cult, classic pop and rock
+, True Confessions, 0:2:58, Blue Oyster Cult, classic pop and rock
+, Out Of Stadion - Original, 0:1:22, Blue Oyster Cult, classic pop and rock
+, Ginger Snaps - Original, 0:1:35, Blue Oyster Cult, classic pop and rock
+, Demon's Kiss - Original, 0:3:53, Blue Oyster Cult, classic pop and rock
+, Remodeling - Original, 0:2:14, Blue Oyster Cult, classic pop and rock
+, Spray That Scumbag - Original, 0:1:44, Blue Oyster Cult, classic pop and rock
+, Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock
+, Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Redeemed, 0:3:52, Blue Oyster Cult, classic pop and rock
+, Workshop Of The Telescopes, 0:4:2, Blue Oyster Cult, classic pop and rock
+, What Is Quicksand, 0:3:41, Blue Oyster Cult, classic pop and rock
+, Godzilla, 0:7:50, Blue Oyster Cult, classic pop and rock
+]
+Done with FoothillTunesStore.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/music_genre_subset.json
+duration: 30
+
+NOTES: Testing set of elements found with sums
+       to exactly to target budget.
+---------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+
+Enter the duration of your play list (in minutes):
+30
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 9 ms : 46900 ns
+Songs in play list:
+[Mes Dames Sarat, 0:4:7, Blue Oyster Cult, classic pop and rock
+, Screams, 0:3:10, Blue Oyster Cult, classic pop and rock
+, Dance The Night Away, 0:2:39, Blue Oyster Cult, classic pop and rock
+, (Don't Fear) The Reaper, 0:5:8, Blue Oyster Cult, classic pop and rock
+, Morning Final, 0:4:15, Blue Oyster Cult, classic pop and rock
+, The Revenge Of Vera Gemini, 0:3:51, Blue Oyster Cult, classic pop and rock
+, Out Of Stadion - Original, 0:1:22, Blue Oyster Cult, classic pop and rock
+, Ginger Snaps - Original, 0:1:35, Blue Oyster Cult, classic pop and rock
+, Demon's Kiss - Original, 0:3:53, Blue Oyster Cult, classic pop and rock
+]
+Done with FoothillTunesStore.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/music_genre_subset.json
+duration: 15.2
+
+NOTES: Testing target budget returning closest match.
+---------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+
+Enter the duration of your play list (in minutes):
+15.2
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 4 ms : 507252 ns
+Songs in play list:
+[Mes Dames Sarat, 0:4:7, Blue Oyster Cult, classic pop and rock
+, Dance The Night Away, 0:2:39, Blue Oyster Cult, classic pop and rock
+, Debbie Denise, 0:4:11, Blue Oyster Cult, classic pop and rock
+, Morning Final, 0:4:15, Blue Oyster Cult, classic pop and rock
+]
+Done with FoothillTunesStore.

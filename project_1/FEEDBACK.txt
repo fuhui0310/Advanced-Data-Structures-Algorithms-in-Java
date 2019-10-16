@@ -1,0 +1,19 @@
+FEEDBACK:
+
+Good implementation of the class Subsetsum findSubset() method.
+
+
+Good documentation of your source code.
+
+
+Extra Credit Opportunity:
++1 implementation of findSubset() for SongEntry type.
+   Is not able to handle the duration when target is 0.
+   Is not able to handle the case where the requested duration > sum of all elements
+   in a reasonable amount of time.
+   
++2 demonstration of successfully finding subsetsum in RUN.txt is required.
+   However, next time make sure to test against a broader range of inputs.
+
+-Bita.
+

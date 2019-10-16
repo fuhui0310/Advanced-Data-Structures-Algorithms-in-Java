@@ -1,0 +1,8 @@
+tomato,2.5
+pineapple,14
+watermelon,10.3
+banana,3
+shaddock,7
+orange,5
+apple,5.5
+cherry,4
