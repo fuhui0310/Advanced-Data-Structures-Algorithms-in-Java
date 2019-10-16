@@ -1,0 +1,13 @@
+FEEDBACK:
+
+Nice clean implementation of your Queue class, especially en/dequeue() methods.
+
+
+-0 Remove the parameter for inner class Node. See feedback from previous project.
+
+
+Good implementation implementation of the ListIterator class.
+    However wouldn't a more appropriate name be QueueIterator?
+     
+-Bita.
+
