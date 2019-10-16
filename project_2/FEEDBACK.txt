@@ -1,0 +1,74 @@
+FEEDBACK:
+
+Excellent implementation of stack data structure!
+
+
+Good stress testing of BrowserNavigation.
+
+
+Suggestion: Consider giving a warning when the user requests to pop
+            off an empty stack.
+
+
+-0.5 incomplete implementation of class Navigator setCurrentLink() method does not
+   successfully reset the forwardLinks stack.
+   See sample output below.
+
+   Suggestion: Try the adding a few links to your browser’s forward links stack.
+               Then, go to a new page. What happens?
+
+
+
+-0 Remove the parameter for inner class Node as follows:   
+      public class Node
+      { ... }
+   Otherwise the parameter MyType of inner class Node will
+   hide the type of the outer StackList class. 
+   Essentially writing:
+       public class StackList<MyType> ...
+       { 
+           MyType memberVar;
+           
+           public class Node<MyType>
+           { 
+               MyType someVar; 
+           }
+       }
+   Is the same as writing:
+       public class StackList<MyType> ...
+       { 
+           MyType memberVar;
+           
+           public class Node<AnotherType>
+           { 
+               AnotherType someVar; 
+           }
+       }
+    which may introduce unwanted side effects and bugs.
+
+
+-Bita.
+
+
+
+sample out put 1:
+At line #8: link www.amazon.com
+Current Link: www.amazon.com
+
+Back with 2 links:
+[www.youtube.com, www.yahoo.com]
+
+Forward with 1 links:
+[www.cnet.com]
+
+Link www.cnet.com found
+
+
+At line #10: link www.reddit
+Current Link: www.reddit
+
+Back with 3 links:
+[www.amazon.com, www.youtube.com, www.yahoo.com]
+
+Forward with 1 links:
+[www.cnet.com]

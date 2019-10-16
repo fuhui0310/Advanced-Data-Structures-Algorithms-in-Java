@@ -1,0 +1,571 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/links.txt
+
+NOTES: Testing adding and removing items from back
+       and forward stacks.
+-----------------------------------------------------
+
+
+At line #1: link www.google.com
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 0 links:
+[]
+
+
+At line #2: link news.google.com
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #3: link www.educationnews.org
+Current Link: www.educationnews.org
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #4: link www.nytimes.com
+Current Link: www.nytimes.com
+
+Back with 3 links:
+[www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #5: link www.nytimes.com/pages/education
+Current Link: www.nytimes.com/pages/education
+
+Back with 4 links:
+[www.nytimes.com, www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #6: back
+Current Link: www.nytimes.com
+
+Back with 3 links:
+[www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 1 links:
+[www.nytimes.com/pages/education]
+
+
+At line #7: back
+Current Link: www.educationnews.org
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 2 links:
+[www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #8: back
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 3 links:
+[www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #9: link www.technologyreview.com
+Current Link: www.technologyreview.com
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 3 links:
+[www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #10: back
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #11: link www.techtimes.com
+Current Link: www.techtimes.com
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #12: link www.techtimes.com/biztech
+Current Link: www.techtimes.com/biztech
+
+Back with 3 links:
+[www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #13: link www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm
+Current Link: www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm
+
+Back with 4 links:
+[www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #14: back
+Current Link: www.techtimes.com/biztech
+
+Back with 3 links:
+[www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 5 links:
+[www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #15: back
+Current Link: www.techtimes.com
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 6 links:
+[www.techtimes.com/biztech, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #16: forward
+Current Link: www.techtimes.com/biztech
+
+Back with 3 links:
+[www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 5 links:
+[www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #17: forward
+Current Link: www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm
+
+Back with 4 links:
+[www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #18: link www.java.com/en/java_in_action/alice.jsp
+Current Link: www.java.com/en/java_in_action/alice.jsp
+
+Back with 5 links:
+[www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+Link news.foogle.com NOT found
+
+Link www.nytimes.com found
+
+
+At line #21: link www.instructables.com
+Current Link: www.instructables.com
+
+Back with 6 links:
+[www.java.com/en/java_in_action/alice.jsp, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #22: link www.ign.com
+Current Link: www.ign.com
+
+Back with 7 links:
+[www.instructables.com, www.java.com/en/java_in_action/alice.jsp, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #23: link www.ted.com
+Current Link: www.ted.com
+
+Back with 8 links:
+[www.ign.com, www.instructables.com, www.java.com/en/java_in_action/alice.jsp, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 4 links:
+[www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #24: back
+Current Link: www.ign.com
+
+Back with 7 links:
+[www.instructables.com, www.java.com/en/java_in_action/alice.jsp, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 5 links:
+[www.ted.com, www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #25: back
+Current Link: www.instructables.com
+
+Back with 6 links:
+[www.java.com/en/java_in_action/alice.jsp, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 6 links:
+[www.ign.com, www.ted.com, www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+Link www.ted.com found
+
+
+At line #27: link www.foogle.com
+Current Link: www.foogle.com
+
+Back with 7 links:
+[www.instructables.com, www.java.com/en/java_in_action/alice.jsp, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 6 links:
+[www.ign.com, www.ted.com, www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+Link www.ted.com found
+
+
+
+At the end of test file resources/links.txt
+Current Link: www.foogle.com
+
+Back with 7 links:
+[www.instructables.com, www.java.com/en/java_in_action/alice.jsp, www.techtimes.com/articles/27723/20150122/tips-for-learning-java.htm, www.techtimes.com/biztech, www.techtimes.com, news.google.com, www.google.com]
+
+Forward with 6 links:
+[www.ign.com, www.ted.com, www.technologyreview.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+Done with BrowserNavigation.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/popEmptyStackOfLinks.txt
+
+NOTES: Testing attempts to remove item from empty Back stack.
+---------------------------------------------------
+
+
+At line #1: link www.google.com
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 0 links:
+[]
+
+
+At line #2: link news.google.com
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #3: link www.educationnews.org
+Current Link: www.educationnews.org
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #4: link www.nytimes.com
+Current Link: www.nytimes.com
+
+Back with 3 links:
+[www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #5: link www.nytimes.com/pages/education
+Current Link: www.nytimes.com/pages/education
+
+Back with 4 links:
+[www.nytimes.com, www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #6: back
+Current Link: www.nytimes.com
+
+Back with 3 links:
+[www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 1 links:
+[www.nytimes.com/pages/education]
+
+
+At line #7: back
+Current Link: www.educationnews.org
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 2 links:
+[www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #8: back
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 3 links:
+[www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #9: back
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 4 links:
+[news.google.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #10: back
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 4 links:
+[news.google.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #11: back
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 4 links:
+[news.google.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+
+At the end of test file resources/popEmptyStackOfLinks.txt
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 4 links:
+[news.google.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+Done with BrowserNavigation.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inputFile03.txt
+
+NOTES: Testing attempts to remove item from empty Forward stack.
+---------------------------------------------------
+
+
+At line #1: link www.google.com
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 0 links:
+[]
+
+
+At line #2: link news.google.com
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #3: link www.educationnews.org
+Current Link: www.educationnews.org
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #4: link www.nytimes.com
+Current Link: www.nytimes.com
+
+Back with 3 links:
+[www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #5: link www.nytimes.com/pages/education
+Current Link: www.nytimes.com/pages/education
+
+Back with 4 links:
+[www.nytimes.com, www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #6: back
+Current Link: www.nytimes.com
+
+Back with 3 links:
+[www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 1 links:
+[www.nytimes.com/pages/education]
+
+
+At line #7: back
+Current Link: www.educationnews.org
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 2 links:
+[www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #8: back
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 3 links:
+[www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #9: back
+Current Link: www.google.com
+
+Back with 0 links:
+[]
+
+Forward with 4 links:
+[news.google.com, www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #10: forward
+Current Link: news.google.com
+
+Back with 1 links:
+[www.google.com]
+
+Forward with 3 links:
+[www.educationnews.org, www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #11: forward
+Current Link: www.educationnews.org
+
+Back with 2 links:
+[news.google.com, www.google.com]
+
+Forward with 2 links:
+[www.nytimes.com, www.nytimes.com/pages/education]
+
+
+At line #12: forward
+Current Link: www.nytimes.com
+
+Back with 3 links:
+[www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 1 links:
+[www.nytimes.com/pages/education]
+
+
+At line #13: forward
+Current Link: www.nytimes.com/pages/education
+
+Back with 4 links:
+[www.nytimes.com, www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #14: forward
+Current Link: www.nytimes.com/pages/education
+
+Back with 4 links:
+[www.nytimes.com, www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+At line #15: forward
+Current Link: www.nytimes.com/pages/education
+
+Back with 4 links:
+[www.nytimes.com, www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+
+
+At the end of test file resources/inputFile03.txt
+Current Link: www.nytimes.com/pages/education
+
+Back with 4 links:
+[www.nytimes.com, www.educationnews.org, news.google.com, www.google.com]
+
+Forward with 0 links:
+[]
+
+Done with BrowserNavigation.
+
