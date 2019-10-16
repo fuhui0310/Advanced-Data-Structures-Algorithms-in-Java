@@ -1,0 +1,9 @@
+FEEDBACK:
+
+Well done in applying garbage collection to your LazySearchTree class!
+
+
+Good description of the purpose of each test case in your RUN file.
+
+-Bita.
+
