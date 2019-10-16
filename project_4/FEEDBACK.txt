@@ -1,0 +1,121 @@
+FEEDBACK:
+
+-10% late submission.
+
+You're on the right track, however your implementation does not correctly
+        update the lazy search tree for various test cases. 
+
+        Provide additional test cases beyond those provided. Start with 
+        *small* input test cases and *draw out* the resulting data structure. 
+        If you are able to verify your results, then gradually build up to 
+         more complex test cases. 	
+         
+
+-4 Incomplete implementation of findMin() and findMax()
+   does not correctly traverse the tree of non-deleted nodes.
+   See sample output 1, 2 and 3.
+
+Suggestion: When searching for the minimum make sure to search
+   both left and right subtrees:
+   if (root is null)
+      simply return;
+   otherwise:
+   findMin on left subtree and return node found;
+   check if current root we're at is deleted, if not then return current root;
+   findMin on right subtree and return node found;   <--- you are missing this key portion
+
+
+
+Extra Credit:
++1 Good start to testing of findMin() and findMax() in class FoothillTuneStore.
+   However, the current usage and result of findMin() and findMax() does not show
+   that you are able to successfully find the min and max of the tree.
+	
+   For future make sure to successfully complete the required portion of the assigning
+   before attempting the extra credit portion.
+   See above sample output 4 and above feedback.
+   
+-Bita.
+
+
+
+sample output 1:
+...
+Testing traversing "hard" inventory:
+apples:0  bread:0  milk:0  soup:0  tangerines:1  turnips:1  
+
+Testing traversing "soft" inventory:
+tangerines:1  turnips:1  
+
+
+at line #14: buy apples
+First item: apples:0 
+Last item: turnips:1 
+
+
+
+sample output 2:
+...
+Testing traversing "hard" inventory:
+bread:0  chicken:0  lemon:1  mango:1  milk:0  soup:0  tomatoes:2  watermelon:1  zucchini:1  
+
+Testing traversing "soft" inventory:
+lemon:1  mango:1  tomatoes:2  watermelon:1  zucchini:1  
+
+
+at line #15: add tomatoes
+First item: bread:0 
+Last item: zucchini:1 
+
+
+
+
+sample output 3:
+...
+Testing traversing "hard" inventory:
+mango:0  milk:1  tomatoes:1  
+
+Testing traversing "soft" inventory:
+milk:1  tomatoes:1  
+
+
+at line #4: buy mango
+First item: mango:0 
+Last item: tomatoes:1 
+
+
+
+sample output 4:
+
+Update at line #9: remove,Tom's Diner
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+Here With Me, 0:4:41, Dido, classic pop and rock:2  Luka, 0:3:52, Suzanne Vega, classic pop and rock:1  Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical:1  Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock:1  Solo, 0:4:41, Working Week, classic pop and rock:1  Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock:1  Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock:0  
+
+Testing traversing "soft" inventory:
+Here With Me, 0:4:41, Dido, classic pop and rock:2  Luka, 0:3:52, Suzanne Vega, classic pop and rock:1  Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical:1  Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock:1  Solo, 0:4:41, Working Week, classic pop and rock:1  Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock:1  
+
+
+at line #9: remove,Tom's Diner
+First item: Here With Me, 0:4:41, Dido, classic pop and rock:2 
+Last item: Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock:0 
+
+
+Update at line #10: remove,Here With Me
+"hard" number of unique items (i.e. mSizeHard) = 7
+"soft" number of unique items (i.e. mSize) = 6
+
+Testing traversing "hard" inventory:
+Here With Me, 0:4:41, Dido, classic pop and rock:1  Luka, 0:3:52, Suzanne Vega, classic pop and rock:1  Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical:1  Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock:1  Solo, 0:4:41, Working Week, classic pop and rock:1  Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock:1  Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock:0  
+
+Testing traversing "soft" inventory:
+Here With Me, 0:4:41, Dido, classic pop and rock:1  Luka, 0:3:52, Suzanne Vega, classic pop and rock:1  Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical:1  Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock:1  Solo, 0:4:41, Working Week, classic pop and rock:1  Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock:1  
+
+
+at line #10: remove,Here With Me
+First item: Here With Me, 0:4:41, Dido, classic pop and rock:1 
+Last item: Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock:0 
+
+
