@@ -1,0 +1,35 @@
+FEEDBACK:
+
+-10% late submission.
+
+
+Very good use of HeapTuple in class heapArrayMerger!
+
+
+-0.5 Do *not* change method signatures. 
+   This includes the package name, list of file imports, visibility of methods, 
+	capitalization of method names, order of arguments,
+	handling of exceptions, etc.
+	Otherwise it results in errors, effecting your grade.
+    See sample compilation error below:
+Cannot make a static reference to the non-static method 
+   mergeSortedArrays(int, ArrayList<Integer[]>, HeapTuple[], String, boolean) from the type HeapArrayMerger.
+
+
+-2 For Phase 1, use a sorting algorithm based on MEM_SIZE
+   as required by project description.
+       "The sorting algorithm should depend on the number of elements." 
+   For large data set such as an array size greater than 1000 numbers
+   which of the sorting algorithms is efficient?
+
+
+-0 For future remove debugging output such as in class HeapArrayMerger:
+System.out.println(test[i]);
+   Otherwise it is difficult to identify key results.
+
+
+-0 For future consider providing a description of the params to
+   clarify their purpose in Javadocs.
+      
+-Bita.
+

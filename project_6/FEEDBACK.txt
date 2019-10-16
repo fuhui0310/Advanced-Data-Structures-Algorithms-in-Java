@@ -1,0 +1,37 @@
+FEEDBACK:
+
+Very good overloading of hashCode() and compareTo() methods in wrapper 
+   classes SongsCompInt and SongsInGenre.
+   
+
+Good start to testing of your implementation.
+
+
+-2 NullPointerException while performing a search on an invalid song id:
+    public E find(KeyType x){
+     int index = findPosKey(x) ;  <--- exception due to:
+     
+       protected int findPosKey( KeyType x) {
+        int kthOddNum = 1;
+        int index = myHashKey(x);
+        if (mArray[index].data == null) {
+            throw new NoSuchElementException();
+        }
+        while ( mArray[index].data.compareTo(x) != 0) {   <--- which is accessing a null pointer
+
+     Make sure that the element is not marked as empty as follows:
+             while ( (mArray[index].state != EMPTY) && mArray[index].data.compareTo(x) != 0) {
+     
+   
+-Bita.
+
+
+
+sample output 1:
+Finding song id: 26192
+Exception in thread "main" java.lang.NullPointerException
+	at hashTables.FHhashQPwFind.findPosKey(FHhashQPwFind.java:55)
+	at hashTables.FHhashQPwFind.find(FHhashQPwFind.java:26)
+	at hashTables.InstructorTestFile.testIDtable(InstructorTestFile.java:146)
+	at hashTables.InstructorTestFile.instructorTestInputFile(InstructorTestFile.java:213)
+	at hashTables.InstructorTestFile.main(InstructorTestFile.java:294)

@@ -1,0 +1,171 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: findIDs.txt, findGenres.txt
+
+NOTES: Example test file for hashing
+-----------------------------------------------------
+Total number of songs read 59600
+Test file for id table: resources/findIDs.txt
+
+Finding song id: 2
+Song id 2 found in tableOfSongIDs.
+
+Finding song id: 3
+Song id 3 found in tableOfSongIDs.
+
+Finding song id: 4
+Song id 4 found in tableOfSongIDs.
+
+Finding song id: 99
+Song id 99 found in tableOfSongIDs.
+
+Finding song id: 99999
+Song id 99999 NOT found in tableOfSongIDs.
+Done with testing table of ids.
+
+Test file for genre table: resources/findGenres.txt
+
+Number of store songs in each genre:
+classic pop and rock 	  23895
+                punk 	   3200
+                folk 	  13192
+                 pop 	   1617
+dance and electronica 	   4935
+               metal 	   2103
+      jazz and blues 	   4334
+           classical 	   1874
+             hip-hop 	    434
+     soul and reggae 	   4016
+
+Finding genre: pop
+Genre "pop" found in tableOfGenres.
+
+Finding genre: classic pop and rock
+Genre "classic pop and rock" found in tableOfGenres.
+
+Finding genre: FOOTHILL
+Genre "FOOTHILL" NOT found in tableOfGenres.
+Done with testing table of genres.
+
+
+Done with MyTunes.
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: findIDs_test1.txt, findGenres_test1.txt
+
+NOTES: test file for testing method find() when requesting negative number.
+-----------------------------------------------------
+Total number of songs read 59600
+Test file for id table: resources/findIDs_test1.txt
+
+Finding song id: 2
+Song id 2 found in tableOfSongIDs.
+
+Finding song id: 3
+Song id 3 found in tableOfSongIDs.
+
+Finding song id: 4
+Song id 4 found in tableOfSongIDs.
+
+Finding song id: -99
+Song id -99 NOT found in tableOfSongIDs.
+
+Finding song id: -100
+Song id -100 NOT found in tableOfSongIDs.
+
+Finding song id: 99999
+Song id 99999 NOT found in tableOfSongIDs.
+Done with testing table of ids.
+
+Test file for genre table: resources/findGenres_test1.txt
+
+Number of store songs in each genre:
+classic pop and rock 	  23895
+                punk 	   3200
+                folk 	  13192
+                 pop 	   1617
+dance and electronica 	   4935
+               metal 	   2103
+      jazz and blues 	   4334
+           classical 	   1874
+             hip-hop 	    434
+     soul and reggae 	   4016
+
+Finding genre: metal
+Genre "metal" found in tableOfGenres.
+
+Finding genre: jazz and blues
+Genre "jazz and blues" found in tableOfGenres.
+
+Finding genre: hip-hop
+Genre "hip-hop" found in tableOfGenres.
+
+Finding genre: 123123123
+Genre "123123123" NOT found in tableOfGenres.
+
+Finding genre: 321323
+Genre "321323" NOT found in tableOfGenres.
+
+Finding genre: -123
+Genre "-123" NOT found in tableOfGenres.
+Done with testing table of genres.
+
+
+Done with MyTunes.
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: findIDs_test2.txt, findGenres_test2.txt
+
+NOTES: test file for testing method() when requesting 0 and 59599.
+-----------------------------------------------------
+Total number of songs read 59600
+Test file for id table: resources/findIDs_test2.txt
+
+Finding song id: 0
+Song id 0 found in tableOfSongIDs.
+
+Finding song id: 59599
+Song id 59599 found in tableOfSongIDs.
+Done with testing table of ids.
+
+Test file for genre table: resources/findGenres_test2.txt
+
+Number of store songs in each genre:
+classic pop and rock 	  23895
+                punk 	   3200
+                folk 	  13192
+                 pop 	   1617
+dance and electronica 	   4935
+               metal 	   2103
+      jazz and blues 	   4334
+           classical 	   1874
+             hip-hop 	    434
+     soul and reggae 	   4016
+
+Finding genre: 0
+Genre "0" NOT found in tableOfGenres.
+
+Finding genre: 0
+Genre "0" NOT found in tableOfGenres.
+
+Finding genre: metal
+Genre "metal" found in tableOfGenres.
+
+Finding genre: jazz and blues
+Genre "jazz and blues" found in tableOfGenres.
+
+Finding genre: hip-hop
+Genre "hip-hop" found in tableOfGenres.
+
+Finding genre: 59599
+Genre "59599" NOT found in tableOfGenres.
+
+Finding genre: pop
+Genre "pop" found in tableOfGenres.
+
+Finding genre: classic pop and rock
+Genre "classic pop and rock" found in tableOfGenres.
+Done with testing table of genres.
+
+
+Done with MyTunes.
