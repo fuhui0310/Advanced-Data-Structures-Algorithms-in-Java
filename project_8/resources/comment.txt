@@ -1,0 +1,22 @@
+graph1
+    -This graph shows the growth of the runtime of different array size in recursion limit from 2 to 300.
+    -There are 20 graphs in the chart, which are representing the array size from 20000 to 10000000.
+    -The runtime of different array remains stable at first in recursion limit from 2 to 18, where I think
+    -the optimal may lie. Then, it has been gradually growing. And I find that the growth is larger when the
+    -array size is larger.
+
+graph2
+    -This graph shows the growth of runtime of array size 10000000 in recursion limit from 2 to 50.
+    -I choose this line because I find that the changing is larger when the array size is larger.
+    -This dataset obviously showing where the optimal lie. As we observed on graph1, the optimal may
+    -lie from 2 to 18. In this graph, we can see more clearly where it is. The runtime went down
+    -at first in recursion limit from 2 to 16, and then started to increases gradually. That means
+    -the optimal of array size 10000000 is on recursion limit 14 in this case.
+
+graph3
+    -This graph shows the growth of runtime of array size 10000000 in recursion limit from 2 to 50.
+    -I choose this line because I find that the changing is larger when the array size is larger.
+    -This dataset obviously showing where the optimal lie. As we observed on graph1, the optimal may lie
+    -from 2 to 18. In this graph, we can see more clearly where it is. The runtime went down at first in
+    -recursion limit from 2 to 16, and then started to increases gradually. That means the optimal of
+    -array size 10000000 is on recursion limit 14 in this case.
